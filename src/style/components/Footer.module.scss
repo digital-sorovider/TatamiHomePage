@@ -1,0 +1,53 @@
+/* footer */
+
+.footer {
+  background-color: rgb(66, 96, 45);
+
+  .footer-contents-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 20px 10vw;
+    @include mq(tab) {
+      padding: 3vw 10vw;
+      justify-content: start;
+      gap: 7vw;
+    }
+  
+    p {
+      font-size: 20px;
+      @include mq(tab) {
+        font-size: 2.5vw;
+      }
+    }
+  }
+  
+  .icons {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    @include mq(tab) {
+      display: none;
+      gap: 0;
+    }
+    li :hover {
+      color: #c5c990;
+    }
+  }
+  
+  .footerText {
+    padding-left: 10vw;
+    text-align: center;
+    @include mq(tab) {
+      padding-left: 0;
+    }
+  
+    &:hover {
+      color: #c5c990;
+    }
+  }
+}
+
+

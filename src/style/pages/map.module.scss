@@ -1,0 +1,8 @@
+.note {
+  margin-bottom: 20px;
+  font-size: 18px;
+  @include mq(tab) {
+    margin-bottom: 5vw;
+    font-size: 4.5vw;
+  }
+}

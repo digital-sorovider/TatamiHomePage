@@ -1,0 +1,26 @@
+/* life */
+
+.life-subtitle-content {
+  
+  .life-img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    @include mq(tab) {
+      flex-direction: column;
+      gap: 3vw;
+      img {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.life-subtitle-content p {
+  margin-left: 25px;
+  @include mq(tab) {
+    margin: 4vw 0;
+  }
+}
+

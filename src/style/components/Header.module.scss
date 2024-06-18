@@ -1,0 +1,46 @@
+/* header */
+
+.header {
+  height: 100px;
+  border-bottom: solid 3px rgb(66, 96, 45);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+  @include mq(tab) {
+    height: 15vw;
+    padding: 0 3vw;
+  }
+
+  .logo {
+    top: 15px;
+    left: 50px;
+    width: 220px;
+    height: auto;
+    @include mq(tab) {
+      width: 30vw;
+    }
+  }
+
+  .rightContent {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    @include mq(tab) {
+      gap: 5vw;
+    }
+
+    .menu {
+      width: 36px;
+      @include mq(tab) {
+        width: 10vw;
+      }
+    }
+  }
+}
+

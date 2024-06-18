@@ -1,0 +1,14 @@
+/* separator-line */
+
+.separator-line {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(66, 96, 45, 0.712);
+  margin-bottom: 150px;
+  margin-top: 150px;
+  @include mq(tab) {
+    width: 100%;
+    background-color: rgba(66, 96, 45, 0.712);
+    margin: 15vw 0;
+  }
+}

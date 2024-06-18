@@ -1,0 +1,27 @@
+.arrow-icon-container {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  @include mq(tab) {
+    height: 15vw;
+  }
+  .arrow-icon svg {
+    fill: #42602D;
+    @include mq(tab) {
+      height: 15vw;
+      width: 15vw;
+    }
+  
+    &:hover {
+      fill: #6E6C2E;
+    }
+  }
+}
+

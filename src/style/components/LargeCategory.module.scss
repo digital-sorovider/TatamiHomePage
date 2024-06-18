@@ -1,0 +1,39 @@
+/* LargeCategory */
+
+.large-category-container {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  @include mq(tab) {
+    height: 10vw;
+  }
+}
+
+.large-category-line {
+  width: 20%;
+  height: 30%;
+  border-bottom: 1px solid #000;
+  @include mq(tab) {
+    height: 38%;
+    width: 68%;
+  }
+}
+
+.large-category {
+  line-height: 60px;
+  text-align: center;
+  font-size: 25px;
+  white-space: nowrap;
+  @include mq(tab) {
+    line-height: 7vw;
+    font-size: 7vw;
+  }
+}
+
+.large-category-line:nth-child(3n) {
+  width: 80%;
+  @include mq(tab) {
+    width: 85%;
+  }
+}
+

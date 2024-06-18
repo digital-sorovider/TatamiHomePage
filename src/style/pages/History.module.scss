@@ -1,0 +1,55 @@
+/* history */
+
+.history-hero {
+  position: relative;
+}
+
+.history-hero-img {
+  width: 100%;
+  height: auto;
+}
+
+.history-hero-content-wrapper {
+  @include mq(tab) {
+    height: 10vw;
+    margin-bottom: 5vw;
+  }
+}
+
+.history-hero-content-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  writing-mode: vertical-rl;
+  letter-spacing: 25px;
+  font-family: serif;
+  text-shadow: 2px 2px 3px black;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  text-align: end;
+  display: flex;
+  gap: 30px;
+  margin-right: 100px;
+  margin-top: 70px;
+  @include mq(tab) {
+    letter-spacing: 3.5vw;
+    margin-right: 6vw;
+    gap: 3vw;
+    margin-top: 1vw;
+  }
+
+  h3 {
+    font-size: 40px;
+    @include mq(tab) {
+      font-size: 3.6vw;
+    }
+    &:nth-child(1) {}
+
+    &:nth-child(2) {
+      margin: 0;
+    }
+  }
+}
+

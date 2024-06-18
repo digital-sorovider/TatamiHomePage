@@ -1,0 +1,284 @@
+.Contact-contents-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  form {
+    margin-top: 50px;
+    width: 70%;
+    @include mq(tab) {
+      margin-top: 5vw;
+      width: 100%;
+    }
+    .Input-item {
+      border-bottom: 1px solid rgb(66, 96, 45);
+      margin: 50px 0 20px 0;
+      @include mq(tab) {
+        margin: 15vw 0 9vw 0;
+      }
+      .item {
+        display: flex;
+        margin-bottom: 10px;
+        @include mq(tab) {
+          margin-bottom: 5vw;
+        }
+        p {
+          font-size: 20px;
+          border-radius: 10px;
+          height: 32px;
+          padding: 0 4px;
+          margin-right: 10px;
+          font-weight: bold;
+          white-space: nowrap;
+          @include mq(tab) {
+            font-size: 4vw;
+            border-radius: 2vw;
+            height: 8vw;
+            padding: 0 1vw;
+            margin-right: 3vw;
+          }
+        }
+        .required-tag {
+          background-color: #4d7445;
+          color: #fff;
+        }
+        .Norequired-tag {
+          background-color: #d3d1d1;
+          color: #000;
+        }
+        label {
+          font-size: 20px;
+          font-weight: bold;
+          @include mq(tab) {
+            font-size: 4.5vw;
+          }
+        }
+      }
+      .Input-screen {
+        margin-bottom: 30px;
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        @include mq(tab) {
+          margin-bottom: 5vw;
+        }
+        input,
+        textarea {
+          width: 95%;
+          height: 45px;
+          font-size: 20px;
+          @include mq(tab) {
+            width: 100%;
+            height: 10vw;
+            font-size: 4vw;
+          }
+        }
+        textarea {
+          height: 300px;
+          @include mq(tab) {
+            height: 50vw;
+          }
+        }
+        ::placeholder {
+          font-size: 20px;
+          @include mq(tab) {
+            font-size: 4.5vw;
+          }
+        }
+        .Input-chackbox {
+          width: initial;
+          height: initial;
+        }
+        .Input-chackbox-label {
+          font-size: 20px;
+          margin-left: 5px;
+          @include mq(tab) {
+            font-size: 4.5vw;
+            margin-left: 1.2vw;
+          }
+        }
+
+        .topicCheckboxes {
+          margin: 7px 0;
+          display: flex;
+          @include mq(tab) {
+            margin: 3vw 0;
+          }
+          .other-option {
+            width: 70%;
+            margin-left: 1vw;
+            border: none;
+            border-bottom: 1px solid gray;
+            background-color: #F8F4EC;
+            height: 30px;
+            align-self: flex-end;
+            @include mq(tab) {
+              height: 5vw;
+            }
+          }
+        }
+
+        input[type="checkbox"] {
+          margin: 0;
+          padding: 0;
+          background: none;
+          border: none;
+          border-radius: 0;
+          outline: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          cursor: pointer;
+          padding-left: 30px;
+          @include mq (tab) {
+            padding-left: 7vw;
+            height: 6vw;
+          }
+
+          /*label手前にチェックボックス用の余白を開ける*/
+          vertical-align: middle;
+          position: relative;
+
+          &::before,
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+          }
+
+          &::before {
+            background-color: #fff;
+            border-radius: 0%;
+            border: 1px solid #666464;
+            width: 20px;
+            
+            /*チェックボックスの横幅*/
+            height: 20px;
+            
+            /*チェックボックスの縦幅*/
+            transform: translateY(-50%);
+            top: 50%;
+            left: 5px;
+            @include mq(tab) {
+              width: 5vw;
+              height: 5vw;
+              left: 1vw;
+            }
+          }
+
+          &::after {
+            border-bottom: 3px solid #666464;
+            /*チェックの太さ*/
+            border-left: 3px solid #666464;
+            /*チェックの太さ*/
+            opacity: 0;
+            /*チェック前は非表示*/
+            height: 6px;
+            /*チェックの高さ*/
+            width: 11px;
+            /*チェックの横幅*/
+            transform: rotate(-45deg);
+            top: 10px;
+            /*チェック時の位置調整*/
+            left: 10px;
+            @include mq(tab) {
+              height: 1.5vw;
+              width: 3vw;
+              top: 2vw;
+              left: 2vw;
+            }
+          }
+
+          &:checked::after {
+            opacity: 1;
+          }
+        }
+
+        .error-mesege {
+          color: rgb(231, 31, 31);
+          font-weight: bold;
+          font-size: 19px;
+          @include mq(tab) {
+            font-size: 4.6vw;
+          }
+        }
+      }
+    }
+    .Reserv-btn {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      @include mq(tab) {
+        padding-top: 5vw;
+      }
+      button {
+        background-color: #436644;
+        width: 300px;
+        height: 70px;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: bold;
+        @include mq(tab) {
+          width: 100%;
+          height: 13vw;
+        }
+        p {
+          @include mq(tab) {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.thanks-card{
+  width: 70%;
+  height: 300px;
+  background-color: #fff;
+  border: 2px solid rgb(66, 96, 45);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  @include mq(tab) {
+    width: 100%;
+    height: 50vw;
+    margin-top: 5vw;
+  }
+  p {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    @include mq(tab) {
+      font-size: 4vw;
+    }
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 30px;
+    @include mq(tab) {
+      margin-top: 5vw;
+    }
+    button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+        appearance: none;
+        background-color:rgb(89, 138, 94);
+        color: #fff;
+        border: 0;
+        font-size: 20px;
+        border-radius: 5px;
+        width: 250px;
+        height: 50px;
+        @include mq(tab) {
+          font-size: 4vw;
+          width: 70%;
+          height: 10vw;
+        }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+/* warp */
+.warp-container {
+  @include mq(tab) {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 5vw 0;
+    width: 100vw;
+  }
+  @include mq(sp) {
+    transform: translateX(-9vw);
+    
+  }
+
+  .warp-content {
+    width: 190px;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    z-index: 800;
+    @include mq(tab) {
+      display: flex;
+      flex-direction: row;
+      height: 7vw;
+      position: relative;
+      top: initial;
+      left: initial;
+      right: initial;
+      width: initial;
+      justify-content: left;
+      padding: 0;
+      margin-left: 1vw;
+      gap: 5vw;
+    }
+
+    a {
+      text-decoration: none;
+      @include mq(tab) {
+        height: 7vw;
+      }
+      li {
+        @include mq(tab) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    .warp-year {
+      list-style: none;
+      background-color: rgb(156, 190, 166);
+      text-align: center;
+      line-height: 46px;
+      color: white;
+      font-size: 25px;
+      font-weight: 600;
+      border-radius: 5px 0 0 5px;
+      padding: 3px 0;
+      @include mq(tab) {
+        height: 7vw;
+        width: 22vw;
+        font-size: 3.5vw;
+        border-radius: 1vw;
+        padding: 1vw 0;
+      }
+      &:hover {
+        outline: 4px solid rgb(89, 138, 94);
+        @include mq(tab) {
+          border: 3px solid rgb(89, 138, 94);
+          outline: initial;
+        }
+      }
+    }
+    .selected {
+      background-color: rgb(89, 138, 94);
+    }
+  }
+}
+
+.is-scrolled {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 20vw;
+  background-color: #f8f4ec;
+  display: flex;
+  align-items: center;
+  z-index: 800;
+  transform: initial;
+}
+

@@ -1,0 +1,143 @@
+/* products */
+
+.products {
+  margin-bottom: 50px;
+  @include mq(tab) {
+    margin-bottom: 15vw;
+  }
+}
+
+.product {
+
+  a {
+    text-decoration: none;
+    color: rgb(13, 32, 13);
+    @include mq(tab) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+  
+    &:hover {
+      color: #000;
+    }
+  }
+  h2 {
+    text-align: center;
+    margin: 15px 0;
+    @include mq(tab) {
+      margin: 3vw 0;
+    }
+  }
+
+}
+
+/* sub-products */
+
+.sub-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 939px;
+  margin: 0 auto;
+  @include mq(tab) {
+    display: inline;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 30%;
+  }
+
+
+  .product-text {
+    h2 {
+      font-family: 'Yuji Syuku', serif;
+      font-size: 30px;
+      @include mq(tab) {
+        font-size: 4.8vw;
+        margin: 4vw 0;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 100px;
+      margin-top: 0;
+      text-align: center;
+      @include mq(tab) {
+        font-size: 4vw;
+        margin-bottom: 10vw;
+      }
+    }
+  }
+  .product-text {
+    width: 330px;
+    @include mq(tab) {
+      width: 80%;
+    }
+    @include mq(sp) {
+      width: 100%;
+    }
+  }
+  .product-img-box {
+    width: 330px;
+    height: 210px;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3);
+    @include mq(tab) {
+      width: 80%;
+      height: 37vw;
+    }
+    @include mq(sp) {
+      width: 100%;
+      height: 45.3vw;
+    }
+  
+    .fill {
+      width: 60%;
+      filter: grayscale(0.6);
+      display: inline-block;
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  
+    .text-box {
+      .gara {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #42602D;
+      }
+  
+      width: 40%;
+      color: white;
+      justify-content: center;
+      align-items: center;
+  
+      h3 {
+        font-size: 25px;
+        margin-left: 10px;
+        @include mq(tab) {
+          font-size: 5vw;
+          margin-left: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+

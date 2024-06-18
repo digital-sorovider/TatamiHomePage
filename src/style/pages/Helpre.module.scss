@@ -1,0 +1,109 @@
+.QandA-container {
+  margin-bottom: 30px;
+  background-color: rgb(192, 216, 192);
+  border-radius: 5px;
+  padding: 10px 10px;
+  @include mq(tab) {
+    margin-bottom: 5vw;
+    padding: 3vw;
+    border-radius: 2vw;
+  }
+
+  /* question */
+  
+  .question-container {
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    @include mq(tab) {
+      gap: 2vw;
+    }
+
+  }
+  
+  .question {
+    font-size: 20px;
+    @include mq(tab) {
+      font-size: 4.3vw;
+    }
+  }
+  
+  .q-icon {
+    background-color: #fff;
+    border-radius: 5px;
+    color: rgb(67, 102, 68);
+    width: 35px;
+    text-align: center;
+    border: 3px solid rgb(67, 102, 68);
+    font-size: 20px;
+    font-weight: 700;
+    @include mq(tab) {
+      width: 6vw;
+      font-size: 3vw;
+      border: 1vw solid rgb(67, 102, 68);
+    }
+  }
+  
+  .plus-icon {
+    width: 10%;
+  }
+  
+  p {
+    margin: 0;
+    width: 85%;
+  }
+  
+  /* answr */
+  
+  .answer-container {
+    border: 20px solid rgb(192, 216, 192);
+    background-color: #F2FAF0;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    @include mq(tab) {
+      border: 2vw solid rgb(192, 216, 192);
+      gap: 2vw;
+      padding: 2vw;
+      
+    }
+  }
+  
+  .answer {
+    width: 90%;
+  }
+  
+  .a-icon {
+    background-color: rgb(67, 102, 68);
+    border-radius: 5px;
+    color: white;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    @include mq(tab) {
+      width: 6vw;
+      height: 6vw;
+      font-size: 4vw;
+    }
+  }
+  
+  /* つけ外しするクラス */
+  
+  .rotate {
+    width: 10%;
+    transform: rotate(45deg);
+  }
+  
+  .isClose {
+    display: none;
+  }
+  
+  .isOpen {
+    display: flex;
+  }
+}
+

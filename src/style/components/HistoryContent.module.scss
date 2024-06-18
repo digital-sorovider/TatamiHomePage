@@ -1,0 +1,91 @@
+/* historyContent */
+
+.history-content {
+  display: flex;
+  gap: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  justify-content: space-between;
+
+  /* jsonの文字列が改行できるようになる */
+  white-space: pre-wrap;
+  @include mq(tab) {
+    gap: 2vw;
+    padding: 5vw 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    @include mq(tab) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.Carousel {
+  width: 600px;
+  @include mq(tab) {
+    width: 80vw;
+  }
+}
+
+.history-content img {
+  width: 600px;
+  object-fit: cover;
+  @include mq(tab) {
+    width: 80vw;
+    height: 50vw;
+  }
+}
+
+/* text */
+
+.text-box {
+  width: 500px;
+  @include mq(tab) {
+    width: 80vw;
+  }
+
+  .month {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #244d0a;
+    @include mq(tab) {
+      font-size: 5vw;
+      margin-bottom: 2vw;
+    }
+    @include mq(sp) {
+      font-size: 6vw;
+    }
+  }
+
+  .title {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    @include mq(tab) {
+      font-size: 4vw;
+      margin-bottom: 2vw;
+    }
+    @include mq(sp) {
+      font-size: 4.5vw;
+      margin-bottom: 3.5vw;
+    }
+  }
+
+  .discription {
+    font-size: 18px;
+    @include mq(tab) {
+      font-size: 3vw;
+    }
+    @include mq(sp) {
+      font-size: 4vw;
+    }
+  }
+}

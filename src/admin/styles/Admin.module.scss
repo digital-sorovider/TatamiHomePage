@@ -1,0 +1,15 @@
+.admin main {
+    max-width: initial !important;
+    margin: initial !important;
+}
+
+.productCard {
+    box-sizing:content-box;
+    cursor: grab;
+    &:active {
+        cursor: grabbing;
+    }
+    &:hover {
+        border: 2px #ff6d6d solid;
+    }
+}

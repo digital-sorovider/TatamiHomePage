@@ -1,0 +1,23 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // adminコレクション以外のreadはログイン不要で行える
+    match /{collection}/{documentId} {
+      allow read: if collection != 'admin';
+      // その他コレクションのアップデートはログインしていて且つユーザーのUIDとdoc.idが一致するadminコレクションのdocデータのstatusプロパティがtrueでなければならない
+      allow read, write: if request.auth != null && exists(/databases/$(database)/documents/admin/$(request.auth.uid)) && get(/databases/$(database)/documents/admin/$(request.auth.uid)).data.status == true;
+    }
+
+    // adminコレクションのルール
+    match /admin/{adminId} {
+      // adminコレクションのドキュメントcreateだけはログインしているだけでできるようにする
+      allow create: if request.auth != null;
+
+      // adminコレクションのドキュメントreadは自分がログインしているUIDとadminコレクションのdoc.idが一致している場合のみ、そのdocのみreadできる
+      allow read: if request.auth != null && request.auth.uid == adminId;
+
+      // adminコレクションのupdateはログインしていて且つユーザーのUIDとdoc.idが一致するadminコレクションのdocデータのstatusプロパティがtrueでなければならない
+      allow read, write: if request.auth != null && request.auth.uid == adminId && resource.data.status == true;
+    }
+  }
+}

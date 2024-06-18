@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "tatami-f2ad1",
+    "dev": "dev-tatami"
+  },
+  "targets": {
+    "tatami-f2ad1": {
+      "hosting": {
+        "dev": [
+          "dev-tatami"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

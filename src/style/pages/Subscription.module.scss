@@ -1,0 +1,136 @@
+/* subscription */
+
+.LargeCategory-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vh;
+  margin-bottom: 50px;
+  @include mq(tab) {
+    margin-bottom: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 40%;
+    height: auto;
+    @include mq(tab) {
+      width: 100%;
+    }
+  }
+
+  p {
+    width: 600px;
+    @include mq(tab) {
+      width: 100%;
+    }
+  }
+}
+
+.LargeCategory-container {
+  margin-top: 50px;
+  @include mq(tab) {
+    margin-bottom: 15vw;
+    margin-top: 3vw;
+  }
+  &:nth-child(even) .LargeCategory-content {
+    flex-direction: row-reverse;
+    @include mq(tab) {
+      flex-direction: column;
+    }
+  }
+
+  &:nth-child(4) img, &:nth-child(5) img, &:nth-child(6) img {
+    width: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  h3 {
+    @include mq(tab) {
+      font-size: 5vw;
+      margin: 0;
+    }
+  }
+}
+
+.special-thenks-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.doneru-logo {
+  @include mq(tab) {
+    width: 70vw;
+    height: auto;
+    margin-bottom: 3vw;
+  }
+  &:hover {
+    opacity: 0.7;
+
+  }
+}
+
+.subscription-used {
+  @include mq(tab) {
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+  }
+  li {
+    @include mq(tab) {
+      font-size: 4.5vw;
+    }
+    &:first-child {
+      list-style: none;
+
+    }
+  }
+}
+
+.subscription-subtitle-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  p {
+    font-size: 20px;
+    margin: 0;
+    line-height: 30px;
+    @include mq(tab) {
+      font-size: 5vw;
+      line-height: 6vw;
+    }
+  }
+}
+
+.special-thenks {
+  display: flex;
+
+  h2 {
+    font-size: 30px;
+    @include mq(tab) {
+      font-size: 9vw;
+    }
+  }
+  img {
+    @include mq(tab) {
+      width: 6vw;
+    }
+  }
+}
+
+.special-thenks-name {
+  font-size: 20px;
+  width: 500px;
+  text-align: center;
+  @include mq(tab) {
+    font-size: 6vw;
+    width: 90vw;
+  }
+}
+
+.special-thenks-content tr {
+  border-width: 2px;
+}
+

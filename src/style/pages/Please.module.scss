@@ -1,0 +1,25 @@
+/* please */
+.download {
+  font-size: 25px;
+  text-decoration: none;
+  color: #525a49;
+  @include mq(tab) {
+    font-size: 4vw;
+  }
+  svg {
+    margin-right: 10px;
+    @include mq(tab) {
+      width: 4vw;
+      height: 4vw;
+      margin-right: 1vw;
+    }
+  }
+  
+}
+
+.download-container {
+  display: flex;
+  flex-direction: column;
+}
+
+

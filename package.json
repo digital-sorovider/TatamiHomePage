@@ -1,0 +1,71 @@
+{
+  "name": "tatamiserver",
+  "version": "0.1.0",
+  "private": true,
+  "main": "functions/index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npm run dev",
+    "default:start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.0.8",
+    "@dnd-kit/sortable": "^7.0.2",
+    "@mui/icons-material": "^5.13.7",
+    "@mui/material": "^5.13.7",
+    "@tiptap/extension-image": "^2.1.6",
+    "@tiptap/extension-table": "^2.0.4",
+    "@tiptap/extension-table-cell": "^2.0.4",
+    "@tiptap/extension-table-header": "^2.0.4",
+    "@tiptap/extension-table-row": "^2.0.4",
+    "axios": "^1.5.1",
+    "bootstrap": "^5.3.1",
+    "dns": "^0.2.2",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
+    "firebase": "^9.0.0",
+    "html-react-parser": "^4.2.0",
+    "is-url": "^1.2.4",
+    "moment": "^2.29.4",
+    "next": "^13.4.19",
+    "ra-input-rich-text": "^4.12.1",
+    "react": "^18.2.0",
+    "react-admin": "^4.12.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-bootstrap": "^2.6.0",
+    "react-burger-menu": "^3.0.9",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.46.2",
+    "react-icons": "^4.6.0",
+    "react-loader-spinner": "^5.4.5",
+    "react-router-dom": "^6.4.3",
+    "sharp": "^0.32.5",
+    "superjson": "^1.13.1",
+    "swr": "^2.2.2",
+    "use-sound": "^4.0.1",
+    "uuid": "^9.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": "18"
+  },
+  "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.8.5",
+    "babel-plugin-superjson-next": "^0.4.5",
+    "sass": "^1.66.1"
+  }
+}

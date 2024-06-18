@@ -1,0 +1,17 @@
+.icons {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  @include mq(sp) {
+    display: none;
+  }
+
+  li :hover {
+    color: #687832;
+  }
+
+  svg path {
+    color: #42602D;
+  }
+}

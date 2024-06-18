@@ -1,0 +1,66 @@
+/* SNS */
+
+.sns-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+  padding-bottom: 100px;
+  @include mq(tab) {
+    justify-content: center;
+    gap: 7vw;
+    padding-bottom: 10vw;
+  }
+}
+
+.sns-content {
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3);
+  background-color: #ffffffb7;
+  outline: 2px solid rgb(192, 216, 192);
+  border-radius: 8px;
+  width: 19vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  @include mq(tab) {
+    width: 60vw;
+    padding: 0 2vw;
+  }
+
+  &:hover {
+    outline: 3px solid #377832;
+  }
+}
+
+.icon {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  @include mq(tab) {
+    padding: 3vw 0;
+    svg {
+      width: 10vw;
+      height: 10vw;
+    }
+  }
+}
+
+.sns-title {
+  margin: 0;
+  @include mq(tab) {
+    font-size: 4.4vw;
+  }
+}
+
+.sns-discription {
+  padding: 20px 0;
+  @include mq(tab) {
+    padding-top: 3vw;
+    font-size: 3.7vw;
+  }
+}
+
+.sns-link {
+  text-decoration: none;
+  color: rgb(13, 32, 13);
+}

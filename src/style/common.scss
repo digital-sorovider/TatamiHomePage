@@ -1,0 +1,90 @@
+/* 共通CSS */
+
+/* body */
+
+body {
+  margin: 0;
+  background-color: #f8f4ec;
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  color: rgb(13, 32, 13);
+}
+
+/* span 文字の色や太さを変える */
+
+.green {
+  color: rgb(40, 94, 44);
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.light-blue {
+  color: rgb(40, 177, 187);
+}
+
+h2, p, h5, h3 {
+  margin: 0;
+}
+
+/* main */
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 200px;
+  position: relative;
+  margin-top: 100px;
+  @include mq(tab) {
+    background-color: #f8f4ecd3;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 30vw;
+    margin-top: 15vw;
+  }
+}
+
+.subtitle-content {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  @include mq(tab) {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  p {
+    font-size: 20px;
+    margin: 0;
+    line-height: 30px;
+    @include mq(tab) {
+      font-size: 4.5vw;
+      line-height: 7vw;
+      margin: 0 0 4vw 0;
+    }
+  }
+
+  .subtitle-img {
+    width: 45%;
+    height: auto;
+    margin-bottom: 20px;
+    @include mq(tab) {
+      width: 100%;
+      height: auto;
+      margin:  3vw 0 8vw 0;
+    }
+  }
+}
+
+
+main.RaLayout-contentWithSidebar {
+  background-color: initial !important;
+  padding-left: initial !important;
+  padding-right: initial !important;
+  min-height: initial !important;
+  flex-direction: initial !important;
+}

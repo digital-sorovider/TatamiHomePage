@@ -1,0 +1,105 @@
+/* products */
+.main-products {
+  a {
+    text-decoration: none;
+    color: rgb(13, 32, 13);
+    display: flex;
+    align-items: flex-start;
+    margin-top: 180px;
+    justify-content: flex-start;
+    gap: 20px;
+    border-radius: 5px;
+    @include mq(tab) {
+      margin-top: 15vw;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 2vw;
+    }
+
+    &:hover {
+      color: #000;
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      @include mq(tab) {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.product-img-box {
+  width: 50%;
+  @include mq(tab) {
+    width: 80%;
+  }
+  @include mq(sp) {
+    width: 100%;
+    
+  }
+}
+
+.product-text {
+  width: 45%;
+  @include mq(tab) {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include mq(sp) {
+    width: 100%;
+    
+  }
+}
+
+/* .product-img-box */
+
+.product-img-box {
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3);
+
+  .fill {
+    background-color: rgb(164, 221, 231);
+    display: inline-block;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    display: block;
+    border-radius: 5px;
+  }
+
+  .fill {
+    border-radius: 5px;
+  }
+}
+
+/* product-text */
+
+.product-text {
+  h2 {
+    font-family: 'Yuji Syuku', serif;
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    @include mq(tab) {
+      font-size: 6vw;
+      margin:3vw 0 4vw 0;
+    }
+  }
+
+  p {
+    font-size: 23px;
+    @include mq(tab) {
+      font-size: 4vw;
+    }
+  }
+}
