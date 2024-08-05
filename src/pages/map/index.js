@@ -20,7 +20,7 @@ const Map = ({maps}) => {
           {maps.map(([groupName, maps]) => (
             <div key={groupName}>
               <Subtitle subtitle={groupName} />
-              {groupName.includes('プラグイン') && <p className={Style["note"]}>※プライグインの動作確認にはpaperまたはspigot環境が必要です。</p>}
+              {groupName.includes('プラグイン') && <p className={Style["note"]}>※プラグインの動作確認にはpaperまたはspigot環境が必要です。</p>}
               <div className="Products">
                 <SubProducts products={maps}/>
               </div>

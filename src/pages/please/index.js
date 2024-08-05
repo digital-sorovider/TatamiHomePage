@@ -41,7 +41,7 @@ const Please = () => {
         <Subtitle subtitle="ツイートして盛り上げよう（＃畳サーバー）"/>
           <div className='subtitle-content'>
             <p>
-            日常生活やイベント時など、是非Twitterで
+            日常生活やイベント時など、是非X(旧Twitter)で
             <Link href={"https://twitter.com/search?q=%23%E7%95%B3%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC&src=typed_query"}>
             #畳サーバー
             </Link>

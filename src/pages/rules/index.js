@@ -3,6 +3,7 @@ import Heading from '@components/Heading';
 import Subtitle from '@components/Subtitle';
 import UpArrow from '@components/UpArrow';
 import Igusa from '@components/Igusa';
+import Link from 'next/link';
 // 画像インポート
 import tatami from '/public/images/Igusa.images/sister1.png';
 
@@ -90,7 +91,7 @@ const Rules = () => {
           6 - ゲームの不具合を利用したプレイはしないでください。<br />
           7 - 外部のプログラムを利用したキャラクターの操作はしないでください。連打ツール等もこれに含みます。<br />
           8 - 透明スキンや公序良俗に反するスキンは使用しないでください。<br />
-          9 - MT(リアルマネートレード)を禁止します。<br />
+          9 - RMT(リアルマネートレード)を禁止します。<br />
           10 - 非正規ルートからのログインを禁止します。<br />
           11 - 運営の指示には従うようにしてください。
         </p>
@@ -100,7 +101,14 @@ const Rules = () => {
       <div className='subtitle-content'>
         <p>
           1 - あらかじめイベントのルールや注意事項を確認の上参加してください。<br />
-          2 - 人数制限付きのイベントは、その人気の程度によりサブスクライバー限定となる可能性があります。予めご了承下さい。
+          ┗<Link href={`https://tatamiserver.com/`}>
+          畳ホームページ
+        </Link>から確認できます。<br />
+          2 - 人数制限付きのイベントは、Tebexサブスクプラン(畳サーバー愛好家+以上)購入者を優先的に参加させる可能性があります。あらかじめご了承ください。<br />
+          ┗<Link href={`https://tatamiserver.tebex.io/`}>
+          支援サイト:Tebex
+        </Link>から確認できます。<br />
+          3 - イベント進行者(ゲームマスター)の説明や注意喚起を遮るような会話はお控えください。
         </p>
       </div>
 
@@ -153,6 +161,7 @@ const Rules = () => {
       <br />
       <p>2023年11月05日 公布</p>
       <p>2023年11月06日 改定（5,6,7条の各項に番号を振り分け）</p>
+      <p>2024年 6月27日 改定 (第4条:イベントサーバー共通ルール を変更)</p>
       <UpArrow />
     </div>
   );
