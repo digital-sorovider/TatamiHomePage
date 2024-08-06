@@ -8,7 +8,8 @@
 > Gitのインストールが必要です。インストールされていない場合は下記のURLからアプリケーションをダウンロードしてインストールしてください。  
 > https://git-scm.com/downloads
 ```sh
-git clone https://github.com/Tatami-Server/TatamiHomePage.git
+# (おとたきの場合) thp/homepageフォルダを開いてから
+git clone https://github.com/digital-sorovider/TatamiHomePage.git
 ```
 ### 2. Node.jsのセットアップ
 Windowsの場合は次のコマンドを使用してNode.jsの最新版をインストールできます。  
