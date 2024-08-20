@@ -57,7 +57,7 @@ function Home({ news, topImages }) {
   const MainProductsList = [
     { href: `/join/`, img: join, title: "サーバー参加方法", description: "Discordやマイクラサーバーへの参加方法を紹介しています。" },
     { href: `/event/`, img: event, title: "イベント一覧", description: "当サーバーが提供しているイベント一覧とルールを紹介しています。" },
-    { href: `/life/`, img: life, title: "生活サーバー", description: "半年ぶりに復活した新しい生活サーバーについて紹介しています。" },
+    { href: `/life/`, img: life, title: "生活サーバー", description: "24時間開いている生活サーバーの各機能を紹介しています。" },
   ];
 
   const myRef = useRef(null);
