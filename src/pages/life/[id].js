@@ -29,7 +29,7 @@ export const getStaticPaths = async () => {
     const lifes = await getAll('life')
     const paths = lifes.map(({id}) => ({ params: { id } }))
 
-    return { paths, fallback: false }
+    return { paths, fallback: 'blocking' }
 }
 
 

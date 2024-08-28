@@ -29,7 +29,7 @@ export const getStaticPaths = async () => {
     const events = await getAll('event')
     const paths = events.map(({id}) => ({ params: { id } }))
 
-    return { paths, fallback: false }
+    return { paths, fallback: 'blocking' }
 }
 
 
