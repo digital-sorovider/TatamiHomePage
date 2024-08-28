@@ -20,8 +20,8 @@ const Life = ({funPointList}) => {
 
   return (
     <div>
-      <Heading heading="畳生活サーバー" />
-      <Subtitle subtitle="生活サーバーで遊ぼう！" />
+      <Heading heading="生活鯖Season3始動" />
+      <Subtitle subtitle="24時間遊んで暮らせる 生活鯖で遊ぼう！" />
       <div className='subtitle-content'>
         <div className={Style["life-subtitle-content"]}>
           <div className={Style["life-img-container"]}>
