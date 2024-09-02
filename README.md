@@ -8,7 +8,7 @@
 > Gitのインストールが必要です。インストールされていない場合は下記のURLからアプリケーションをダウンロードしてインストールしてください。  
 > https://git-scm.com/downloads
 ```sh
-# (おとたきの場合) thp/homepageフォルダを開いてから
+# (おとたきの場合) THP/Homepageフォルダを開いてから
 git clone https://github.com/digital-sorovider/TatamiHomePage.git
 ```
 ### 2. Node.jsのセットアップ
@@ -30,7 +30,7 @@ winget install nodejs
 Node.jsパッケージは`node_modules`フォルダに格納されますがサイズが大きいためGithub上にはアップしていません。そこで、同梱されているpackage.jsonを使って必要なパッケージをインストールすることができます。
 クローンしたリポジトリのフォルダを開き、ターミナルで次のコマンドを実行してください。
 ```sh
-# cd tatamiHomePage をした後に
+# cd TatamiHomePage をした後に
 npm i
 ```
 これにより自動的に必要なパッケージがインストールされます。
