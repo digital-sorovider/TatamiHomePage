@@ -11,9 +11,9 @@ import Style from '@style/components/SnsIcons.module.scss';
 const SnsIcons = () => {
 
   const FooterIconList = [
-    { href: "https://twitter.com/tatamiserver", reactIcon: ImTwitter },
+    { href: "https://x.com/tatamiserver", reactIcon: ImTwitter },
     { href: "https://www.youtube.com/@tatamiserver", reactIcon: AiFillYoutube },
-    { href: "https://twitch.tv/ototaki_soji", reactIcon: SiTwitch },
+    { href: "https://twitch.tv/ototaki0622", reactIcon: SiTwitch },
     { href: "https://disco.tatamiserver.com", reactIcon: SiDiscord }
   ]
   

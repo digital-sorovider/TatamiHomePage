@@ -14,7 +14,7 @@ const Footer = () => {
   const FooterIconList = [
     { href: "https://twitter.com/tatamiserver", reactIcon: ImTwitter },
     { href: "https://www.youtube.com/@tatamiserver", reactIcon: AiFillYoutube },
-    { href: "https://twitch.tv/ototaki_soji", reactIcon: SiTwitch },
+    { href: "https://twitch.tv/ototaki0622", reactIcon: SiTwitch },
     { href: "https://disco.tatamiserver.com", reactIcon: SiDiscord }
   ]
   
