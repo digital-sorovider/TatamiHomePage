@@ -10,7 +10,7 @@ import { IconContext } from 'react-icons'
 import Heading from '@components/Heading';
 import Igusa from '@components/Igusa';
 
-// 画像インポート
+// 画像インポート//
 import tatami from '/public/images/Igusa.images/sister1.png';
 
 // cssインポート
@@ -20,11 +20,13 @@ import Link from 'next/link';
 const SNS = () => {
 
   const SnsContentList1 =[
-    {icon:AiFillYoutube, color: '#B13E3E',title:"畳YouTube", discription:"メインの動画も切り抜き名場面もこのチャンネルで投稿しています。", link: "https://www.youtube.com/@tatamiserver"},
-    {icon:SiDiscord, color:'#4E649C', title:"畳Discord", discription:"畳サーバーで遊ぶ際に参加が必要となるサーバーです。リンク先の利用規約をご確認の上、お楽しみください！", link: "https://disco.tatamiserver.com"},
-    {icon:ImTwitter, color:'#52A7AC', title:"畳X", discription:"イベント情報や最新情報はもちろん、鯖民が楽しんでいる日常風景等も投稿していきます！", link: "https://x.com/tatamiserver"},
+    {icon:AiFillYoutube, color: '#B13E3E',title:"畳YouTube", discription:"イベントのダイジェストや切り抜き名場面を投稿している、畳公式YouTubeチャンネルです。", link: "https://www.youtube.com/@tatamiserver"},
+    {icon:SiDiscord, color:'#4E649C', title:"畳Discord", discription:"畳サーバーで遊ぶ際に参加が必要となるサーバーです。サーバールールをご確認の上、お楽しみください！", link: "https://disco.tatamiserver.com"},
+    {icon:ImTwitter, color:'#52A7AC', title:"畳X(旧Twitter)", discription:"イベント情報や最新情報はもちろん、鯖民が楽しんでいる日常風景等も投稿していきます！", link: "https://x.com/tatamiserver"},
+    {icon:ImTwitter, color:'#52A7AC', title:"公式特典サービス(Tebex)", discription:"畳サーバーではサーバー維持のためのご寄付を募っております。ご寄付いただいた方には、ささやかながら特典をご用意しております。", link: "https://tatamiserver.tebex.io/"},
+    {icon:ImTwitter, color:'#52A7AC', title:"畳サーバー 運営募集中！", discription:"畳サーバーの運営を希望する方向けの記事になります。開発・建築・広報・企画など、なんでもOK!ご応募をお待ちしています!", link: "https://mineidea.net/projects/6160894485/"},
     {icon:ImTwitter, color:'#52A7AC', title:"おとたきX(畳オーナー)", discription:"畳のイベントを主催することがあります。", link: "https://x.com/ototaki0622"},
-    {icon:SiTwitch, color:'#6660A7', title:"おとたきTwitch(畳オーナー)", discription:"MinecraftとPS2レトロゲーを中心にTwitchで配信！たまにボードゲームやFPS系も", link: "https://twitch.tv/ototaki0622"},
+    {icon:SiTwitch, color:'#6660A7', title:"おとたきTwitch(畳オーナー)", discription:"MinecraftとPS2レトロゲーを中心にTwitchで配信！たまにボードゲームやFPS系も　畳の配信、主催もしています。", link: "https://twitch.tv/ototaki0622"},
   ]
 
   return (
