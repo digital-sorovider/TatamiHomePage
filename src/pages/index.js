@@ -26,7 +26,7 @@ import history from '/public/images/Home.images/history.png';
 import sns from '/public/images/Home.images/sns.png';
 import rules from '/public/images/Home.images/rules.png';
 import inquery from '/public/images/Home.images/inquery.jpg';
-import event from '/public/images/Home.images/event.png';
+import event from '/public/images/Home.images/event1-2.png';
 import life from '/public/images/Home.images/life.png';
 import join from '/public/images/Home.images/join.png';
 import tatami from '/public/images/Igusa.images/sister1.png';
@@ -45,14 +45,14 @@ function Home({ news, topImages }) {
 
   const SubProductsList = [
     { href: `/map/`, imgTitle: "マップ", img: map, title: "配布マップ", description: "当サーバーが提供している\n配布マップ等を紹介しています。" },
-    { href: `/history/`, imgTitle: "歴史", img: history, title: "畳サーバーの歴史", description: "当サーバーの過去を知ることができます。過去にこんな事が...。" },
+    { href: `/history/`, imgTitle: "歴史", img: history, title: "畳サーバーの歴史", description: "畳サーバーの過去を知ることができます。過去にこんな事が...。" },
     { href: `/sns/`, imgTitle: "SNS", img: sns, title: "公式SNS", description: "YouTube・X・支援サイトTebex等のURLを記載しています。" },
-    { href: `/subscription/`, imgTitle: "ご寄付", img: donation, title: "サブスクライブ・ご寄付", description: "平素よりご支援いただきありがとうございます！" },
-    { href: `/help/`, imgTitle: "応募", img: application, title: "運営への応募", description: "建築や開発など、私たちと共に制作しませんか？" },
-    { href: `/contact/`, imgTitle: "問い合わせ", img: inquery, title: "お問い合わせ・意見箱", description: "意見や要望はこちらから！" },
+    { href: `/subscription/`, imgTitle: "Tebex", img: donation, title: "公式特典サービス", description: "サーバー維持のためのご寄付を募っております。ご寄付いただいた方には、ささやかながら特典をご用意しております。" },
+    { href: `/help/`, imgTitle: "応募", img: application, title: "運営への応募", description: "開発、建築、広報、企画何でもOK!私たちと一緒に畳サーバーを作りませんか？" },
+    { href: `/contact/`, imgTitle: "お問い合わせ", img: inquery, title: "お問い合わせ・意見箱", description: "ご意見やご要望はこちらからご送信ください。" },
     { href: `/please/`, imgTitle: "お願い", img: please, title: "運営からのお願い", description: "サーバーの維持や盛り上げのためにお願いしていることを記載しています。" },
     { href: `/omikuzi/`, imgTitle: "おみくじ", img: omikuzi, title: "畳おみくじ", description: "今日の運勢とクエストを占おう！ちょっとした遊び心で用意したコンテンツです。" },
-    { href: `/rules/`, imgTitle: "利用規約", img: rules, title: "利用規約", description: "みんながサーバーで心地よく過ごすために守って欲しいルール！" }
+    { href: `/rules/`, imgTitle: "利用規約", img: rules, title: "利用規約", description: "みんながサーバーで心地よく過ごすためにルールを設けています" }
   ];
   const MainProductsList = [
     { href: `/join/`, img: join, title: "サーバー参加方法", description: "Discordやマイクラサーバーへの参加方法を紹介しています。" },
