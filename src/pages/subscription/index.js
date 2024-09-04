@@ -12,12 +12,11 @@ import tebeximg from '/public/images/Subscription.images/tebeximg.png';
 import sub1 from '/public/images/Subscription.images/sub1-1.png';
 import sub2 from '/public/images/Subscription.images/sub1-2.png';
 import sub3 from '/public/images/Subscription.images/sub1-3.png';
-import sub4 from '/public/images/Subscription.images/sub1-4.png';
-import sub5 from '/public/images/Subscription.images/sub1-5.png';
 import sub6 from '/public/images/Subscription.images/sub1-6.png';
 import sub8 from '/public/images/Subscription.images/sub1-8.png';
 import tebex from '/public/images/Subscription.images/tebex.png';
 import tatami from '/public/images/Igusa.images/sister1.png';
+import debug from '/public/images/Subscription.images/debug.png';
 
 // cssインポート
 import Style from '@style/pages/Subscription.module.scss';
@@ -30,6 +29,7 @@ const Subscription = () => {
     { title: "通常イベントも優先参加可能！", img: sub2, description: "マイクラバカ人狼のような参加人数制限があるイベントについても、より優先的にゲームに参加できます。" },
     { title: "お名前の横にバッジが付く", img: sub6, description: "畳支援者の証となるバッジが付与され、他の方と違った雰囲気を出すことが可能です。+、++、+++の3段階があり、より上位になると入退室メッセージも豪華になります！"},
     { title: "ロビー鯖で空を飛べる", img: sub8, description: "支援者は、畳のロビーを自由に飛び回ることができます。さらに畳サーバー愛好家++以上の方は、飛行スピードを変更したり、立体起動のような挙動をする[タタマーグラップリングフック]がもらえます！" },
+    { title: "先行体験に参加できるかも…", img: debug, description: "支援者に対し、アップデート予定の新イベントや新機能のデバッグをお願いすることがあるかもしれません。ご参加いただける方は、フィードバック(改善案やご感想)をいただけますと幸いです。" },
   ];
 
   return (
