@@ -18,6 +18,7 @@ import Carousel from 'react-bootstrap/Carousel'
 
 // 画像をインポート
 import donation from '/public/images/Home.images/donation.jpg';
+import tebex from '/public/images/Home.images/tebex.png';
 import map from '/public/images/Home.images/map.png';
 import omikuzi from '/public/images/Home.images/omikuzi.jpg';
 import please from '/public/images/Home.images/please.jpg';
@@ -42,18 +43,19 @@ import { getAll, getOne } from '@lib/firebase';
 
 
 function Home({ news, topImages }) {
-
+// 通常の羅列　順番を変えるときはcompornentのmenu.jsも変更！
   const SubProductsList = [
+    { href: `/subscription/`, imgTitle: "Tebex", img: tebex, title: "公式特典サービス", description: "サーバー維持のためのご寄付を募っております。ご寄付いただいた方には、ささやかながら特典をご用意しております。" },
+    { href: `/rules/`, imgTitle: "利用規約", img: rules, title: "利用規約", description: "みんながサーバーで心地よく過ごすためにルールを設けています" },
     { href: `/map/`, imgTitle: "マップ", img: map, title: "配布マップ", description: "当サーバーが提供している\n配布マップ等を紹介しています。" },
     { href: `/history/`, imgTitle: "歴史", img: history, title: "畳サーバーの歴史", description: "畳サーバーの過去を知ることができます。過去にこんな事が...。" },
     { href: `/sns/`, imgTitle: "SNS", img: sns, title: "公式SNS", description: "YouTube・X・支援サイトTebex等のURLを記載しています。" },
-    { href: `/subscription/`, imgTitle: "Tebex", img: donation, title: "公式特典サービス", description: "サーバー維持のためのご寄付を募っております。ご寄付いただいた方には、ささやかながら特典をご用意しております。" },
     { href: `/help/`, imgTitle: "応募", img: application, title: "運営への応募", description: "開発、建築、広報、企画何でもOK!私たちと一緒に畳サーバーを作りませんか？" },
     { href: `/contact/`, imgTitle: "お問い合わせ", img: inquery, title: "お問い合わせ・意見箱", description: "ご意見やご要望はこちらからご送信ください。" },
     { href: `/please/`, imgTitle: "お願い", img: please, title: "運営からのお願い", description: "サーバーの維持や盛り上げのためにお願いしていることを記載しています。" },
     { href: `/omikuzi/`, imgTitle: "おみくじ", img: omikuzi, title: "畳おみくじ", description: "今日の運勢とクエストを占おう！ちょっとした遊び心で用意したコンテンツです。" },
-    { href: `/rules/`, imgTitle: "利用規約", img: rules, title: "利用規約", description: "みんながサーバーで心地よく過ごすためにルールを設けています" }
   ];
+  // TOPに来る目立つ羅列　順番を変えるときはcompornentのmenu.jsも変更！
   const MainProductsList = [
     { href: `/join/`, img: join, title: "サーバー参加方法", description: "Discordやマイクラサーバーへの参加方法を紹介しています。" },
     { href: `/event/`, img: event, title: "イベント一覧", description: "当サーバーが提供しているイベント一覧とルールを紹介しています。" },
