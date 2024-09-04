@@ -71,7 +71,7 @@ const Subscription = () => {
           })}
         </div>
       </div>
-      <Subtitle subtitle="ご寄付" />
+      <Subtitle subtitle="公式特典サービス Tebexサイトはこちら" />
       <div className={Style["subscription-subtitle-content"]}>
         <p>↓ご支援をご検討いただける方は、下記アイコンを押下ください↓</p>
         <Link href={"https://tatamiserver.tebex.io/"} target="_blank" >
