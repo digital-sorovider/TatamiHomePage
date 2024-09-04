@@ -18,6 +18,10 @@ import tebex from '/public/images/Subscription.images/tebex.png';
 import tatami from '/public/images/Igusa.images/sister1.png';
 import debug from '/public/images/Subscription.images/debug.png';
 
+// 画像サイズがおかしい時は…
+// heightとwidthは基本width４０％のheight:autoにしてます。
+// 画像サイズそれぞれ個別で変更したいときは、Subscription.module.scssで個別にcssを書いてもらうとサイズを変更できます！
+
 // cssインポート
 import Style from '@style/pages/Subscription.module.scss';
 
