@@ -5,7 +5,7 @@ import { SiTwitch } from 'react-icons/si'
 import { SiDiscord } from 'react-icons/si'
 import { IconContext } from 'react-icons'
 
-import tatamiIcontwitch from '/public/images/icon.images/tatami-icon-twitch.png';
+import tatamiIcontebex from '/public/images/icon.images/tatami-icon-tebex.png';
 
 import Image from "next/image";
 
@@ -18,7 +18,7 @@ const Footer = () => {
   const FooterIconList = [
     { href: "https://twitter.com/tatamiserver", reactIcon: ImTwitter, isIcon: true },
     { href: "https://www.youtube.com/@tatamiserver", reactIcon: AiFillYoutube, isIcon: true },
-    { href: "https://twitch.tv/ototaki0622", reactIcon: tatamiIcontwitch, isIcon: false },
+    { href: "https://tatamiserver.tebex.io/", reactIcon: tatamiIcontebex, isIcon: false },
     { href: "https://disco.tatamiserver.com", reactIcon: SiDiscord, isIcon: true }
   ]
 

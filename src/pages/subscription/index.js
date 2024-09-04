@@ -15,7 +15,7 @@ import sub3 from '/public/images/Subscription.images/sub1-3.png';
 import sub4 from '/public/images/Subscription.images/sub1-4.png';
 import sub5 from '/public/images/Subscription.images/sub1-5.png';
 import sub6 from '/public/images/Subscription.images/sub1-6.png';
-import sub7 from '/public/images/Subscription.images/sub1-7.png';
+import sub8 from '/public/images/Subscription.images/sub1-8.png';
 import tebex from '/public/images/Subscription.images/tebex.png';
 import tatami from '/public/images/Igusa.images/sister1.png';
 
@@ -23,22 +23,23 @@ import tatami from '/public/images/Igusa.images/sister1.png';
 import Style from '@style/pages/Subscription.module.scss';
 
 const Subscription = () => {
-
+// 各メリットはここに掲載してます！
   const LargeCategoryContent = [
-    { title: "限定企画に参加できる！", img: sub1, description: "村人防衛戦・スコットランドヤード・人数制限のある配布マップ等の限定企画に参加できます！" },
+    { title: "イベント鯖を貸し出しできる！", img: sub3, description: "畳のイベントを使った主催が可能です。さらに畳サーバー愛好家++以上の方は、貸し切り(身内だけで開催)も可能です！" },
+    { title: "限定企画に参加できる！", img: sub1, description: "スコットランドヤードや人数制限のある配布マップ等の限定企画に参加できます！" },
     { title: "通常イベントも優先参加可能！", img: sub2, description: "マイクラバカ人狼のような参加人数制限があるイベントについても、より優先的にゲームに参加できます。" },
-    { title: "お名前の横にバッジが付く", img: sub6, description: "サブスクライバーの証となるバッジが付与され、他の方と違った雰囲気を出すことが可能です。+、++、+++の3段階があり、より上位になると入退室メッセージも豪華になります！"},
-    { title: "付近vcMODが使える(Java版限定)", img: sub7, description: "サブスクライバー限定で、付近vcMODでの通話ができるようになりました!味方との連携をする際や敵の位置を察知する際など、楽しさの幅がぐっと広がります！" },
+    { title: "お名前の横にバッジが付く", img: sub6, description: "畳支援者の証となるバッジが付与され、他の方と違った雰囲気を出すことが可能です。+、++、+++の3段階があり、より上位になると入退室メッセージも豪華になります！"},
+    { title: "ロビー鯖で空を飛べる", img: sub8, description: "支援者は、畳のロビーを自由に飛び回ることができます。さらに畳サーバー愛好家++以上の方は、飛行スピードを変更したり、立体起動のような挙動をする[タタマーグラップリングフック]がもらえます！" },
   ];
 
   return (
     <>
-      <Heading heading="サブスクライブ・ご寄付について" />
-      <Subtitle subtitle="サブスクライブとは？" />
+      <Heading heading="畳公式特典サービス Tebex" />
+      <Subtitle subtitle="Tebexとは？" />
       <div className='subtitle-content'>
         <Image className='subtitle-img' src={tebeximg} alt="tebexの画像"></Image>
         <p>
-        当サーバーには
+        畳サーバーには
             <Link href={"https://tatamiserver.tebex.io/"}>
             Tebex
             </Link>
@@ -49,13 +50,12 @@ const Subscription = () => {
             ・外注依頼をする際の費用<br/>
             などの目的で利用させていただきます。<br/>
 
-            Tebexでは月額制(サブスクライブ)で入手できる特典や、<br/>
+            Tebexでは月額制で入手できる特典[畳サーバー愛好家]や、<br/>
             買い切りでアイテムを入手できる特典を用意しています。<br/>
-            今後、随時プランを追加予定です。<br/>
             是非一度ご覧になってみてください！<br/>
         </p>
       </div>
-      <Subtitle subtitle="サブスクライブのメリット！" />
+      <Subtitle subtitle="畳サーバー愛好家の特典" />
       <div className='subtitle-content'>
         <div className={Style["LargeCategory-wrapper"]}>
           {LargeCategoryContent.map(({ title, img, description }) => {
@@ -71,9 +71,9 @@ const Subscription = () => {
           })}
         </div>
       </div>
-      <Subtitle subtitle="ご寄付" />
+      <Subtitle subtitle="公式特典サービス Tebexサイトはこちら" />
       <div className={Style["subscription-subtitle-content"]}>
-        <p>ご寄付はこちらをクリック↓</p>
+        <p>↓ご支援をご検討いただける方は、下記アイコンを押下ください↓</p>
         <Link href={"https://tatamiserver.tebex.io/"} target="_blank" >
           <Image src={tebex} className={Style["tebex"]} alt="tebexのロゴ" width={"160"}></Image>
         </Link>
@@ -116,3 +116,4 @@ const Subscription = () => {
   );
 }
 export default Subscription;
+// 各メリットは上の方 Classにあります

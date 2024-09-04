@@ -11,7 +11,7 @@ import Igusa from '@components/Igusa';
 import Image from "next/image";
 // 画像インポート
 import PleaseVote from '/public/images/Please.images/please1.png';
-import PleaseProfile1 from '/public/images/Please.images/please2-1.png';
+import Tebeximg from '/public/images/Please.images/tebeximg.png';
 import PleaseProfile2 from '/public/images/Please.images/please2-2.png';
 import PleaseJoin from '/public/images/Please.images/please3-1.png';
 import tatami from '/public/images/Igusa.images/sister1.png';
@@ -23,21 +23,6 @@ const Please = () => {
   return (
     <div>
         <Heading heading="運営からのお願い"/>
-        <Subtitle subtitle="投票にご協力ください！"/>
-        <div className='subtitle-content'>
-          <Image className='subtitle-img' src={PleaseVote} alt="サブスクイメージ画像"></Image>
-          <p>
-          JEの方は、1日1回
-          <Link href={"https://minecraft.jp/servers/61488929d0215b4024000000"}>
-          こちら 
-          </Link>
-          で畳サーバーへの投票をすることができます。<br/>
-          投票いただけると
-          <span className='green'>ランキング上位</span>
-          になりやすくなり、新規鯖民が増えてサーバーが盛り上がります。<br/>
-          初回はアカウント登録が必要ですが、一度してしまえば2日目以降は楽なので、ぜひお願いしますm(__)m
-          </p>
-        </div>
         <Subtitle subtitle="ツイートして盛り上げよう（＃畳サーバー）"/>
           <div className='subtitle-content'>
             <p>
@@ -68,6 +53,19 @@ const Please = () => {
                 </Link>
               </IconContext.Provider>
             </div>
+        <Subtitle subtitle="サーバー費用のご寄付のお願い"/>
+        <div className='subtitle-content'>
+          <Image className='subtitle-img' src={Tebeximg} alt="サブスクイメージ画像"></Image>
+          <p>
+          畳サーバーでは、サーバー維持や更なるアップデートのためのご寄付を募っております。<br/>
+          ご寄付いただいた方には、ささやかながら特典をご用意しております。<br/>
+          詳しくは
+          <Link href={"https://tatamiserver.tebex.io/"}>
+          公式特典サービス Tebex 
+          </Link>
+          をご確認ください。<br/>
+          </p>
+        </div>
         <Subtitle subtitle="サーバー維持の為いろんな方と交流してみてください！"/>
           <div className='subtitle-content'>
             <Image className='subtitle-img' src={PleaseJoin} alt="交流している画像"></Image>
@@ -84,6 +82,21 @@ const Please = () => {
             でお待ちしております！<br/>
             </p>
           </div>
+          <Subtitle subtitle="投票にご協力ください！"/>
+        <div className='subtitle-content'>
+          <Image className='subtitle-img' src={PleaseVote} alt="サブスクイメージ画像"></Image>
+          <p>
+          JEの方は、1日1回
+          <Link href={"https://minecraft.jp/servers/61488929d0215b4024000000"}>
+          こちら 
+          </Link>
+          で畳サーバーへの投票をすることができます。<br/>
+          投票いただけると
+          <span className='green'>ランキング上位</span>
+          になりやすくなり、新規鯖民が増えてサーバーが盛り上がります。<br/>
+          初回はアカウント登録が必要ですが、一度してしまえば2日目以降は楽なので、ぜひお願いしますm(__)m
+          </p>
+        </div>
         <UpArrow/>
       <Igusa text="運営からのお願いをまとめました。
         皆さんが楽しんでくれて、盛り上げてくれることが、サーバー維持の一番の近道だわ。
