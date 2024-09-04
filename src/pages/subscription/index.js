@@ -39,7 +39,7 @@ const Subscription = () => {
       <div className='subtitle-content'>
         <Image className='subtitle-img' src={tebeximg} alt="tebexの画像"></Image>
         <p>
-        当サーバーには
+        畳サーバーには
             <Link href={"https://tatamiserver.tebex.io/"}>
             Tebex
             </Link>
