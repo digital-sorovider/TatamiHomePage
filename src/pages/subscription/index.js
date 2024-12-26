@@ -82,15 +82,16 @@ const Subscription = () => {
           <Image src={tebex} className={Style["tebex"]} alt="tebexのロゴ" width={"160"}></Image>
         </Link>
         <p>
-          平素より、畳サーバー並びに鯖主:おとたきの活動に関心をお寄せくださり、
+          平素より、畳サーバーの活動に関心をお寄せくださり、
           誠にありがとうございます。<br />
           この度、サーバー維持の資金として、ご寄付を募ることに致しました。
         </p>
         <ul className={Style["subscription-used"]}>
           <li>[使用実績/使用予定]</li>
           <li>Minecraft有料サーバーのレンタル</li>
-          <li>配信機材　静音キーボード　オーディオインターフェース等の購入</li>
-          <li>新規ゲームやシステムの開発</li>
+          <li>サーバーや通信のアップグレード</li>
+          <li>新規イベントやシステムの開発</li>
+          <li>畳サーバーの宣伝・広告</li>
         </ul>
         <p>
         Tebexでの支援をすると
