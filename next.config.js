@@ -3,6 +3,10 @@ const path = require('path')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
+        unoptimized: true,
+        qualities: [25, 50, 75],
+        imageSizes: [64, 128, 384],
+        minimumCacheTTL: 2678400, // 31 days,
         remotePatterns: [
             { protocol: 'https', hostname: 'firebasestorage.googleapis.com' },
             { protocol: 'https', hostname: 'mineskin.eu' },
