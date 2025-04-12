@@ -4,7 +4,6 @@ const path = require('path')
 const nextConfig = {
     images: {
         unoptimized: true,
-        qualities: [25, 50, 75],
         imageSizes: [64, 128, 384],
         minimumCacheTTL: 2678400, // 31 days,
         remotePatterns: [
