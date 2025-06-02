@@ -12,16 +12,11 @@ const SubProduct = ({product: { href, imgTitle, img, title, description }}) => {
     <div className={Style.product}>
       <Link href={href}>
         <div className={Style["product-img-box"]}>
-          <div className={Style["text-box"]}>
-            <div className={Style.gara}
-              //   style={{backgroundImage: `url(${gara})`,
-              //   backgroundRepeat: 'no-repeat',
-              //   backgroundSize:"cover",
-              // }}
-              >
+          {/* <div className={Style["text-box"]}>
+            <div className={Style.gara}>
               <h3>{imgTitle}</h3>
             </div>
-          </div>
+          </div> */}
           <div className={Style.fill}>
             <Image src={img} width={600} height={300} alt={imgTitle} />
           </div>
