@@ -139,7 +139,7 @@ function Home({ news, topImages }) {
         <section className={Style.products}>
           <MainProducts products={MainProductsList} />
           <SeparatorLine />
-          <SubProducts products={SubProductsList} />
+          <SubProducts products={SubProductsList} filter="grayscale(0.6)"/>
         </section>
         <SeparatorLine />
         <News news={news} />
