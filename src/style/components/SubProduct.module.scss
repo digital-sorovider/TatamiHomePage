@@ -51,6 +51,10 @@
   .product {
     width: 46%;
 
+    @include mq(tab) {
+      width: 100%;
+    }
+
     .product-text {
       // width: 330px;
 
@@ -83,7 +87,7 @@
     }
 
     .product-img-box {
-      height: 280px;
+      aspect-ratio: 16 / 9;
       display: flex;
       border-radius: 5px;
       overflow: hidden;
