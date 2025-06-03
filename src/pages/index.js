@@ -43,7 +43,7 @@ import { getAll, getOne } from '@lib/firebase';
 
 
 function Home({ news, topImages }) {
-// 通常の羅列　順番を変えるときはcompornentのmenu.jsも変更！
+  // 通常の羅列　順番を変えるときはcompornentのmenu.jsも変更！
   const SubProductsList = [
     { href: `/subscription/`, imgTitle: "Tebex", img: tebex, title: "公式特典サービス", description: "サーバー維持のためのご寄付を募っております。ご寄付いただいた方には、ささやかながら特典をご用意しております。" },
     { href: `/rules/`, imgTitle: "利用規約", img: rules, title: "利用規約", description: "みんながサーバーで心地よく過ごすためにルールを設けています" },
@@ -66,23 +66,23 @@ function Home({ news, topImages }) {
 
   const { data: serverStats } = useSWR("/api/minecraft/simple/server",
     url => fetch(url)
-    .then(async r => {
-      let existPlayer = false
-      const rawStats = await r.json()
-      const stats = rawStats.map(rawStat => {
-        const [type, stat] = Object.entries(rawStat)[0]
-        const players = stat?.players || []
-        if(players.length > 0) existPlayer = true
+      .then(async r => {
+        let existPlayer = false
+        const rawStats = await r.json()
+        const stats = rawStats.map(rawStat => {
+          const [type, stat] = Object.entries(rawStat)[0]
+          const players = stat?.players || []
+          if (players.length > 0) existPlayer = true
 
-        return {
-          type,
-          players,
-        }
+          return {
+            type,
+            players,
+          }
+        })
+
+        return { existPlayer, stats }
       })
-
-      return { existPlayer, stats }
-    })
-    .catch((e) => e));
+      .catch((e) => e));
 
   return (
     <>
@@ -93,7 +93,7 @@ function Home({ news, topImages }) {
             <div className={`${Style.triangle} ${Style.line}`}></div>
             <Image className={Style.logo} src='/images/Home.images/logo.png' width={300} height={300} alt="畳アイコン" />
             <div className={Style["first-view-content"]}>
-              <JoinBtn size="small"/>
+              <JoinBtn size="small" />
               <SnsIcons />
               <div className={Style["first-view-menu"]}>
                 <Menu right noOverlay />
@@ -113,8 +113,8 @@ function Home({ news, topImages }) {
               </Carousel.Item>
             )}
           </Carousel>
-          
-            <div className={Style["skin-wrapper"]}>
+
+          {/* <div className={Style["skin-wrapper"]}>
             {serverStats && serverStats.existPlayer > 0 && (
               <>
                 <h2>参加中</h2>
@@ -130,8 +130,8 @@ function Home({ news, topImages }) {
                 </div>
               </>
             )}
-            { !serverStats && <Rings height={150} width={150} />}
-            </div>
+            {!serverStats && <Rings height={150} width={150} />}
+          </div> */}
 
         </div>
       </section>
@@ -139,7 +139,7 @@ function Home({ news, topImages }) {
         <section className={Style.products}>
           <MainProducts products={MainProductsList} />
           <SeparatorLine />
-          <SubProducts products={SubProductsList} />
+          <SubProducts products={SubProductsList} filter="grayscale(0.6)"/>
         </section>
         <SeparatorLine />
         <News news={news} />
