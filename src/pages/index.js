@@ -27,7 +27,7 @@ import history from '/public/images/Home.images/history.png';
 import sns from '/public/images/Home.images/sns.png';
 import rules from '/public/images/Home.images/rules.png';
 import inquery from '/public/images/Home.images/inquery.jpg';
-import event from '/public/images/Home.images/Tatamievent.jpg';
+import event from '/public/images/Home.images/TatamiEvent.jpg';
 import life from '/public/images/Home.images/life.png';
 import join from '/public/images/Home.images/join.png';
 import tatami from '/public/images/Igusa.images/sister1.png';
