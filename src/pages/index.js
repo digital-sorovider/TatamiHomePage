@@ -59,7 +59,7 @@ function Home({ news, topImages }) {
   const MainProductsList = [
     { href: `/join/`, img: join, title: "サーバー参加方法", description: "Discordやマイクラサーバーへの参加方法を紹介しています。" },
     { href: `/event/`, img: event, title: "イベント一覧", description: "当サーバーが提供しているイベント一覧とルールを紹介しています。" },
-    { href: `/life/`, img: life, title: "生活鯖Season3始動", description: "生活鯖は2024年9月からSeason3をスタート！10種類以上のオリジナル職業、ツール成長システム、株券など畳でしか遊べない新しい生活鯖をお楽しみください！" },
+    { href: `/life/`, img: life, title: "生活鯖Season3始動", description: "生活鯖は2024年9月からSeason3スタート！10種類以上のオリジナル職業、ツール成長システム、株券など畳でしか遊べない新しい生活鯖をお楽しみください！" },
   ];
 
   const myRef = useRef(null);
