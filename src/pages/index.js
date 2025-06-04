@@ -27,7 +27,7 @@ import history from '/public/images/Home.images/history.png';
 import sns from '/public/images/Home.images/sns.png';
 import rules from '/public/images/Home.images/rules.png';
 import inquery from '/public/images/Home.images/inquery.jpg';
-import event from '/public/images/Home.images/event1-2.png';
+import event from '/public/images/Home.images/Tatamievent.jpg';
 import life from '/public/images/Home.images/life.png';
 import join from '/public/images/Home.images/join.png';
 import tatami from '/public/images/Igusa.images/sister1.png';
@@ -45,14 +45,14 @@ import { getAll, getOne } from '@lib/firebase';
 function Home({ news, topImages }) {
   // 通常の羅列　順番を変えるときはcompornentのmenu.jsも変更！
   const SubProductsList = [
-    { href: `/subscription/`, imgTitle: "Tebex", img: tebex, title: "公式特典サービス", description: "サーバー維持のためのご寄付を募っております。ご寄付いただいた方には、ささやかながら特典をご用意しております。" },
-    { href: `/rules/`, imgTitle: "利用規約", img: rules, title: "利用規約", description: "みんながサーバーで心地よく過ごすためにルールを設けています" },
+    { href: `/subscription/`, imgTitle: "Tebex", img: tebex, title: "公式特典サービス", description: "サーバー維持のためご寄付を募っています。<br>ご寄付いただいた方には、<br>ささやかながら特典をご用意しております。" },
+    { href: `/rules/`, imgTitle: "利用規約", img: rules, title: "利用規約", description: "鯖民がサーバーで心地よく過ごすために<br>ルールを設けています" },
     { href: `/map/`, imgTitle: "マップ", img: map, title: "配布マップ", description: "当サーバーが提供している\n配布マップ等を紹介しています。" },
-    { href: `/history/`, imgTitle: "歴史", img: history, title: "畳サーバーの歴史", description: "畳サーバーの過去を知ることができます。過去にこんな事が...。" },
-    { href: `/sns/`, imgTitle: "SNS", img: sns, title: "公式SNS", description: "YouTube・X・支援サイトTebex等のURLを記載しています。" },
-    { href: `/help/`, imgTitle: "応募", img: application, title: "運営への応募", description: "開発、建築、広報、企画何でもOK!私たちと一緒に畳サーバーを作りませんか？" },
+    { href: `/history/`, imgTitle: "歴史", img: history, title: "畳サーバーの歴史", description: "畳サーバーの過去を知ることができます。<br>過去にこんな事が...。" },
+    { href: `/sns/`, imgTitle: "SNS", img: sns, title: "公式SNS", description: "YouTube・X・支援サイトTebex等の<br>URLを記載しています。" },
+    { href: `/help/`, imgTitle: "応募", img: application, title: "運営への応募", description: "開発、建築、広報、企画何でもOK!<br>私たちと一緒に畳サーバーを作りませんか？" },
     { href: `/contact/`, imgTitle: "お問い合わせ", img: inquery, title: "お問い合わせ・意見箱", description: "ご意見やご要望はこちらからご送信ください。" },
-    { href: `/please/`, imgTitle: "お願い", img: please, title: "運営からのお願い", description: "サーバーの維持や盛り上げのためにお願いしていることを記載しています。" },
+    { href: `/please/`, imgTitle: "お願い", img: please, title: "運営からのお願い", description: "サーバーの維持や盛り上げのために<br>お願いしていることを記載しています。" },
     { href: `/omikuzi/`, imgTitle: "おみくじ", img: omikuzi, title: "畳おみくじ", description: "今日の運勢とクエストを占おう！ちょっとした遊び心で用意したコンテンツです。" },
   ];
   // TOPに来る目立つ羅列　順番を変えるときはcompornentのmenu.jsも変更！

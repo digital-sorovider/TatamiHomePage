@@ -41,7 +41,9 @@ const Subscription = () => {
       <Heading heading="畳公式特典サービス Tebex" />
       <Subtitle subtitle="Tebexとは？" />
       <div className='subtitle-content'>
-        <Image className='subtitle-img' src={tebeximg} alt="tebexの画像"></Image>
+        <Link href={"https://tatamiserver.tebex.io/"} target="_blank" >
+          <Image src={tebex} className={Style["tebex"]} alt="tebexのロゴ" width={"420"}></Image>
+        </Link>
         <p>
         畳サーバーには
             <Link href={"https://tatamiserver.tebex.io/"}>
@@ -76,10 +78,11 @@ const Subscription = () => {
         </div>
       </div>
       <Subtitle subtitle="公式特典サービス Tebexサイトはこちら" />
+      <p>▼ご支援をご検討いただける方は、下記画像を押下ください▼</p>
       <div className={Style["subscription-subtitle-content"]}>
-        <p>↓ご支援をご検討いただける方は、下記アイコンを押下ください↓</p>
+        
         <Link href={"https://tatamiserver.tebex.io/"} target="_blank" >
-          <Image src={tebex} className={Style["tebex"]} alt="tebexのロゴ" width={"160"}></Image>
+          <Image src={tebex} className={Style["tebex"]} alt="tebexのロゴ" width={"420"}></Image>
         </Link>
         <p>
           平素より、畳サーバーの活動に関心をお寄せくださり、
@@ -107,8 +110,13 @@ const Subscription = () => {
             <Link href={`/subscription/`}>
             こちら
             </Link>
-            からご確認ください。
+            からご確認ください。<br/><br/>
+            <p>▼ご参考：各プランの価格と特典▼</p>
         </p>
+      </div>
+
+      <div className='subtitle-content'>
+        <Image className='subtitle-img' src={tebeximg} alt="tebexの画像"></Image>
       </div>
       <UpArrow />
       <Igusa text="ここではサブスクライバーのメリットや支援者への御礼を掲載しているわ。
