@@ -3,7 +3,7 @@ const path = require('path')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        unoptimized: true,
+        unoptimized: false,
         imageSizes: [64, 128, 384],
         minimumCacheTTL: 2678400, // 31 days,
         remotePatterns: [
