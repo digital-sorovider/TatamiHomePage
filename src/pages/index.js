@@ -64,25 +64,25 @@ function Home({ news, topImages }) {
 
   const myRef = useRef(null);
 
-  const { data: serverStats } = useSWR("/api/minecraft/simple/server",
-    url => fetch(url)
-      .then(async r => {
-        let existPlayer = false
-        const rawStats = await r.json()
-        const stats = rawStats.map(rawStat => {
-          const [type, stat] = Object.entries(rawStat)[0]
-          const players = stat?.players || []
-          if (players.length > 0) existPlayer = true
+  // const { data: serverStats } = useSWR("/api/minecraft/simple/server",
+  //   url => fetch(url)
+  //     .then(async r => {
+  //       let existPlayer = false
+  //       const rawStats = await r.json()
+  //       const stats = rawStats.map(rawStat => {
+  //         const [type, stat] = Object.entries(rawStat)[0]
+  //         const players = stat?.players || []
+  //         if (players.length > 0) existPlayer = true
 
-          return {
-            type,
-            players,
-          }
-        })
+  //         return {
+  //           type,
+  //           players,
+  //         }
+  //       })
 
-        return { existPlayer, stats }
-      })
-      .catch((e) => e));
+  //       return { existPlayer, stats }
+  //     })
+  //     .catch((e) => e));
 
   return (
     <>
