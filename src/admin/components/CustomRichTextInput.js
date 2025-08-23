@@ -78,7 +78,7 @@ const CustomRichTextInput = ({ size, resource, ...props }) => {
     const CustomRichTextInputToolbar = ({ size, ...props }) => {
 
         const editor = useTiptapEditor();
-    const [fontSize, setFontSize] = React.useState('');
+    const [fontSize, setFontSize] = React.useState(16);
         const fontSizeOptions = [12, 14, 16, 18, 20, 24, 28, 32];
 
         React.useEffect(() => {
