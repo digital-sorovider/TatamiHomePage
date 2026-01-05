@@ -57,7 +57,7 @@ function Home({ news, topImages }) {
   ];
   // TOPに来る目立つ羅列　順番を変えるときはcompornentのmenu.jsも変更！
   const MainProductsList = [
-    { href: `/join/`, img: join, title: "サーバー参加方法", description: "Discordやマイクラサーバーへの参加方法を紹介しています。" },
+    { href: `/join/`, img: join, title: "サーバー参加方法", description: "Discordやマイクラサーバーへの参加方法を紹介しています。\n※畳サーバーはJava版限定でサービスを提供しています。統合版の方はプレイいただけません。" },
     { href: `/event/`, img: event, title: "イベント一覧", description: "当サーバーが提供しているイベント一覧とルールを紹介しています。" },
     { href: `/life/`, img: life, title: "生活鯖Season3始動", description: "生活鯖は2024年9月からSeason3スタート！10種類以上のオリジナル職業、ツール成長システム、株券など畳でしか遊べない新しい生活鯖をお楽しみください！" },
   ];
