@@ -28,7 +28,7 @@ const Join = () => {
         <div className='subtitle-content'>
           <Image className='subtitle-img' src={joinDiscord} alt="はじめに と 📘ルール をよく見てね"></Image>
           <p>
-            Discordに加入しましたら<span className='green'> #📘ルール </span>より利用規約を確認し、同意ボタンを押して規約に同意してください。
+            Discordに加入したら<span className='green'> #📘ルール </span>より利用規約を確認し、同意ボタンを押して規約に同意してください。
             <br />
             同意後は自動的に<span className='green'> Tatamiロール </span>が付与され、サーバーへの接続方法や鯖民交流に必要なチャンネルが表示されるようになります。
           </p>
@@ -49,7 +49,7 @@ const Join = () => {
             になると、<br/>
             ・ユニークな入退出メッセージに変更<br/>
             ・プレイヤー名の前に{'("[畳+]")'}のような特別な文字が追加<br/>
-            ・イベントサーバーの貸し出し / 貸し切りが可能に<br/>
+            ・イベント鯖の貸し出し / 貸し切りが可能に<br/>
             ・ロビーを飛び回れるグラップリングフックを入手<br/>
             などなど、たくさんのメリットがあります！詳しくは
             <Link href={`/subscription/`}>
@@ -59,7 +59,7 @@ const Join = () => {
           </p>
         </div>
         <UpArrow/>
-      <Igusa text="サーバーや企画への参加の仕方をまとめてみました。
+      <Igusa text="サーバーや企画への参加の仕方をまとめてみたわ。
         分からないことがあったらDiscordやお問い合わせで聞くといいわ。
         サーバーで待ってるからね。"
         image={tatami}

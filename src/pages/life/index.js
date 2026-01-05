@@ -20,7 +20,7 @@ const Life = ({funPointList}) => {
 
   return (
     <div>
-      <Heading heading="生活鯖Season3始動" />
+      <Heading heading="生活鯖" />
       <Subtitle subtitle="24時間遊んで暮らせる 生活鯖で遊ぼう！" />
       <div className='subtitle-content'>
         <div className={Style["life-subtitle-content"]}>
@@ -29,9 +29,8 @@ const Life = ({funPointList}) => {
             <Image className='subtitle-img' src={life2} alt="生活鯖写真"></Image>
           </div>
           <p>
-            生活鯖は2024年9月からSeason3をスタート！
-            10種類以上のオリジナル職業、ツール成長システム、株券など
-            畳でしか遊べない新しい生活鯖をお楽しみください！
+            生活鯖は2026年1月時点でサービス停止中。
+            次のシーズンに向けて開発を進めていますので、お待ちください！
           </p>
         </div>
       </div>

@@ -26,7 +26,7 @@ const Footer = () => {
     <footer className={Style.footer}>
       <div className={Style["footer-contents-container"]}>
         <p>(c)畳サーバー</p>
-        <p className={Style.footerText}>JEでもBEでも遊べるマイクラサーバー</p>
+        <p className={Style.footerText}>イベントも生活も楽しめるJava版マイクラ鯖</p>
         <ul className={Style.icons}>
           {FooterIconList.map((iconItem, index) => (
               <li key={index}>
